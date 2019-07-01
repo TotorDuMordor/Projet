@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Page + meta -->
+    <title>Ma page contact</title>
+    <meta name="keywords" lang="fr" content>
+    <meta name="description" content="Voici ma page contact pour que vous puissiez me contacter n'importe quand et n'importe où.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+
+    <!---->
+    <link href="css/style.css" rel="stylesheet" media="all" type="text/css"> 
+    <script type="text/javascript" src="js/js.js"></script>
+    <link href="css/nav.css" rel="stylesheet" media="all" type="text/css"> 
+    <link href="css/footer.css" rel="stylesheet" media="all" type="text/css"> 
+
+</head>
+<nav>
+        <div class="topnav" id="myTopnav">
+                <a href="accueil.html" class="active">accueil</a>
+                <a href="cv.html">Curriculum</a>
+                <a href="projet.html">Projet</a>
+                <a href="apropos.html">A propos</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</nav>
+<body>
+        <form method="post" action="back/formulaire.php" class="contact-form" id="form">
+                <div class="row">
+                        <div class="col-md-12">
+                                <input type="text" name="name" placeholder="Insérez votre nom" class="required">
+                        </div>
+                        <div class="col-md-12">
+                                <input type="email" name="email" placeholder="Insérez votre adresse email" class="contact-form-email required">
+                        </div>
+                        <div class="col-md-12">
+                                <input type="text" name="objet" placeholder="Votre sujet" class="contact-form-subject required">
+                        </div>
+                </div>
+                <textarea name="message" placeholder="Insérez votre message" class="required" rows="7"></textarea>
+                <div class="response-message"></div>
+                <button class="border-button border-bt-red" type="submit" id="submit" name="submit">Envoyer Message</button>
+        </form>
+        <div>
+                <input type="checkbox" id="checkboxrgpd" name="données" value="rgpd">
+                <label for="rgpd">Voulez vous acceptez de laisser vos données pour qu'on puisse vous recontacter ?</label>
+                <a href="rgpd.html">RGPD</a>
+        </div>
+</body>
+<footer>
+    <div class="footer">
+            <div>
+                        <a href="rgpd.html">rgpd</a> "l'utilisation des données"  Copyright © 2019 All Rights Reserved <a href="admin.html">Admin</a>
+            </div>
+    </div>
+</footer> 
+</html>
